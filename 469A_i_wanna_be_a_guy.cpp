@@ -16,12 +16,15 @@ int main()
         cin >> array[i];
     }
 
-    sort(array , array+(p+q));
+    //sort(array , array+(p+q));
+    for(int j=1;j<=n;j++){
 
     for(int i = 0 ; i < p+q ; i++){
-        if(array[i] != array[i+1]){
+        if(j== array[i]){
             count++;
+            break;
         }
+    }
     }
 
     if(n == (count)){
